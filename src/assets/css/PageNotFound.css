@@ -30,7 +30,7 @@
 .product-element-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Dos columnas */
-  gap: 1rem; /* Espacio entre los elementos */
+  gap: 3rem; /* Espacio entre los elementos */
   justify-content: center;
   align-items: center;
 }
