@@ -16,7 +16,12 @@ function Products() {
       setProducts(response.data)
     });
   return (
-    <main>
+    <main style={
+      {
+        overflow: 'auto',
+        height: '100vh',
+      }
+    }>
       <h1>Products</h1>
       <ul>
         {products.map((product) => (
