@@ -12,6 +12,10 @@ body {
   overflow: hidden;
   background-color: #f4f6ff;
 }
+main {
+  height: 100vh;
+  overflow: scroll;
+}
 
 .container {
   width: 100vw;
