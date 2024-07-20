@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function NavBarComponent() {
     return (
-        <Router>
+        <>
             <header className="nav bg-dark">
                 <div className="nav-item">
                     <Link className="nav-link active" to="/">Home</Link>
@@ -30,7 +30,7 @@ function NavBarComponent() {
                 <Route exact path="/section" element={<Section />} />
                 <Route exact path="/*" element={<PageNotFound />} />
             </Routes>
-        </Router>
+        </>
     );
 };
 
