@@ -14,8 +14,18 @@ function FooterComponent() {
                 textAlign: 'center',
                 zIndex: '100',
             }} className="footer bg-dark">
-                <p>todos los derechos reservados </p>
-            </footer>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
+
+                    <p>Todos los derechos reservados para <strong>BrandStore. </strong></p>
+                    <p>Siguenos en redes sociales como <strong>@BrandStore</strong></p>
+
+                </div>
+            </footer >
         </>
     );
 };
