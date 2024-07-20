@@ -8,7 +8,9 @@ import PageNotFound from "../../pages/PageNotFound.jsx";
 function NavBarComponent() {
     return (
         <>
-            <header className="nav bg-dark">
+            <header className="nav bg-dark" style={{
+                height: '50px',
+            }}>
                 <div className="nav-item">
                     <Link className="nav-link active" to="/">BrandStore</Link>
                 </div>

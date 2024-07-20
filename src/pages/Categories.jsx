@@ -50,22 +50,9 @@ function Categories() {
 
   return (
     <>
-      <main className="container" style={{
-        display: 'flex',
-        flexDirection: 'column',
-        // backgroundImage: 'url(https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-5991.jpg)',
-        // backgroundPosition: 'center',
-      }}>
-        <section style={{
-          height: '5rem',
-        }}>
-          <h1 className="text-center">Categorías</h1>
-        </section>
-        <section style={{
-          display: 'flex',
-          flexDirection: 'row',
-          gap: '2rem'
-        }}>
+      <main className="main-container">
+        <h2 className="text-center">Categorías</h2>
+        <div className="elements-container">
           {elements.map(element => (
             <Link key={element.id} to={`../categories/${element.name}/products`}>
               <div className='card card-body'>
@@ -82,7 +69,7 @@ function Categories() {
               </div>
             </Link>
           ))}
-        </section>
+        </div>
       </main>
     </>
   );
