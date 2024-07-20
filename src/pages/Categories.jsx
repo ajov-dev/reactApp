@@ -51,7 +51,7 @@ function Categories() {
   return (
     <>
       <main className="main-container">
-        <h2 className="text-center">Categorías</h2>
+        <h2 className="text-center mt-5">Categorías</h2>
         <div className="elements-container">
           {elements.map(element => (
             <Link key={element.id} to={`../categories/${element.name}/products`}>

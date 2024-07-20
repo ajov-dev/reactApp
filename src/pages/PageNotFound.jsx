@@ -84,15 +84,10 @@ function PageNotFound() {
             box-sizing: border-box;
           }
 
-          body {
-            overflow: hidden;
-            background-color: #f4f6ff;
-          }
-
-          main {
-            height: 100vh;
-            overflow: scroll;
-          }
+          // body {
+          //   overflow: hidden;
+          //   background-color: #f4f6ff;
+          // }
 
           .container {
             width: 100vw;

@@ -14,18 +14,34 @@ function Products() {
       })
       .catch(error => console.error('Error fetching products:', error));
   }, []);
+
+  console.log(products);
+
   return (
     <>
-        <div className='container'>
-          <h2>Productos para la categoria {categoryID} </h2>
-          <br />
+      <main className="product-container">
+        <h2 className="text-center mt-5">Productos para la categoría <strong>{categoryID}</strong> </h2>
+        <div className="product-element-container">
+          {/* <div className="">
+            
+          </div> */}
+          {products.map(product => (
+              <div className='card card-body'>
+                <div style={
+                  {
+                    width: '10rem',
+                    height: '10rem',
+                  }
+                }></div>
+                <h5 className="card-title">Nombre del producto</h5>
+                <p className="card-text">Precio del producto</p>
+              </div>
+            ))}
         </div>
 
-        <style>
-          
-        </style>
+      </main>
     </>
-    
+
   );
 }
 

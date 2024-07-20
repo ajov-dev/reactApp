@@ -1,18 +1,4 @@
-main {
-  overflow: scroll;
-  height: calc(100vh - 50px);
-}
-
-.outer_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  /* Puedes cambiar el color de fondo según tu preferencia */
-}
 .main-container {
-  overflow: scroll;
-  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +19,18 @@ main {
   align-items: center;
 }
 
-.card {
+.product-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  padding: 20px; /* Añade un poco de padding */
+}
+
+.product-element-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Dos columnas */
+  gap: 1rem; /* Espacio entre los elementos */
+  justify-content: center;
+  align-items: center;
 }
